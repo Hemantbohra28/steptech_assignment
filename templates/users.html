@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User List</title>
+
+    <!-- Add any CSS links or stylesheets here (e.g., Bootstrap, Tailwind, custom CSS) -->
+
+</head>
+
+<body>
+
+    <h1>User List</h1>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Name</th>
+
+                <th>Email</th>
+
+                <th>Role</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% for user in users %}
+
+            <tr>
+
+                <td>{{ user[0] }}</td> <!-- Assuming user[0] represents the ID -->
+
+                <td>{{ user[1] }}</td> <!-- Assuming user[1] represents the name -->
+
+                <td>{{ user[2] }}</td> <!-- Assuming user[2] represents the email -->
+
+                <td>{{ user[3] }}</td> <!-- Assuming user[3] represents the role -->
+
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
